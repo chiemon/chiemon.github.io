@@ -79,14 +79,18 @@ networks:
         - subnet: "2001:3984:3989::/64"
 ```
 
-`restart`: 容器重启策略。
+## `restart`
+
+容器重启策略。
 
 - `"no"`：默认策略。任何情况下都不会重启。
 - `always`：始终重启容器，直到将其删除。
 - `on-failure`：如果退出代码指示错误，重启容器。
 - `unless-stopped`：无论如何退出代码都重启容器。容器停止或删除时停止重启。
 
-`shm_size`: 容器允许的共享内存（Linux上的/dev/shm分区）的大小。单位`b`(bytes)，`k` or `kb`(kilo bytes)，`m` or `mb`(mega bytes)，`g` or `gb`(giga bytes)。
+## `shm_size`
+
+容器允许的共享内存（Linux上的/dev/shm分区）的大小。单位`b`(bytes)，`k` or `kb`(kilo bytes)，`m` or `mb`(mega bytes)，`g` or `gb`(giga bytes)。
 
 - 2b
 - 1024kb
@@ -94,13 +98,19 @@ networks:
 - 300m
 - 1gb
 
-`privileged`: 出于安全考虑，docker容器中默认的root用户只是相当于主机上的一个普通用户权限，不允许访问主机上的任何设备。使用该参数让容器获取主机root权限，允许容器访问连接到主机的所有设备（位于/dev文件夹下）。
+## `privileged`
 
-`cap_add`: 为容器添加指定功能。
+出于安全考虑，docker容器中默认的root用户只是相当于主机上的一个普通用户权限，不允许访问主机上的任何设备。使用该参数让容器获取主机root权限，允许容器访问连接到主机的所有设备（位于/dev文件夹下）。
+
+## `cap_add`
+
+为容器添加指定功能。
 
 - `SYS_PTRACE`: 添加`ptrace`能力。用于对进程进行调试或者进程注入。
 
-`security_opt`: 覆盖容器的默认标签方案。
+## `security_opt`
+
+覆盖容器的默认标签方案。
 
 - `seccomp:unconfined`: 关闭seccomp profile功能。docker有Seccomp filtering功能，以伯克莱封包过滤器（Berkeley Packer Filter，缩写BPF）的方式允许用户对容器内的系统调用（syscall）做自定义的"allow"，"deny"，"trap"，"kill"，or "trace"操作，由于Seccomp filtering的限制，在默认配置下，会导致在使用GDB的时候run失败。
 
