@@ -1,0 +1,44 @@
+{% if site.mathjax == 'enabled' %}
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_CHTML">
+  </script>
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      extensions: ["tex2jax.js"],
+      jax: ["input/Tex","output/HTML-CSS"],
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+        inlineMath: [['$','$'],['\\(', '\\)']],
+        displayMath: [['$$','$$'],['\\[', '\\]']],
+        processEscapes: true
+      },
+      TeX: {
+        extensions: ["AMSmath.js","AMSsymbols.js"],
+        equationNumbers: {
+          autoNumber: ["AMS"],
+          useLabelIds: true
+        },
+        Macros:{
+          hfill: "{}"
+        },
+      },
+      CommonHTML: {
+        linebreaks: {
+          automatic: true
+        }
+      },
+      "HTML-CSS": {
+        availabelFonts: ["Tex"],
+        linebreaks: {
+          automatic: true
+        }
+      },
+      SVG: {
+        linebreaks: {
+          automatic: true
+        }
+      }
+    });
+  </script>
+{% endif %}
