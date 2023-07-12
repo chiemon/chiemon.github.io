@@ -7,6 +7,14 @@ keywords: c++, debug
 description:
 ---
 
+## 配置编译工具链
+
+<center>
+
+<img src="https://raw.githubusercontent.com/chiemon/chiemon.github.io/master/img/CLion/toolchains.png">
+
+</center>
+
 ## 配置 debug 程序
 
 1. 安装 gdb
@@ -19,7 +27,7 @@ apt-get install gdb
 
 <center>
 
-<img src="https://raw.githubusercontent.com/chiemon/chiemon.github.io/master/img/CLion/toolchains.png">
+<img src="https://raw.githubusercontent.com/chiemon/chiemon.github.io/master/img/CLion/debug.png">
 
 </center>
 
