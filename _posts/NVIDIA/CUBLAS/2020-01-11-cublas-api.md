@@ -1,8 +1,8 @@
 ---
 layout: post
 title: cublas - api
-category: Hardware
-tags: nvidia
+category: nvidia
+tags: cublas
 keywords: cublas
 description:
 ---

@@ -1,9 +1,9 @@
 ---
 layout: post
 title: TensorRT - Custom Layer
-category: Hardware
-tags: nvidia
-keywords: tensorrt custom
+category: nvidia
+tags: tensorrt
+keywords: tensorrt
 description:
 ---
 
