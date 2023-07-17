@@ -15,4 +15,4 @@ perf_analyzer 是 client 的工具，可以通过测量在尝试不同优化策�
 
 **https://github.com/triton-inference-server/client/blob/main/src/c%2B%2B/perf_analyzer/docs/install.md**
 
-使用 client 内置的 perf_analyzer 工具，安装方法[triton系列：client 安装](https://raw.githubusercontent.com/chiemon/chiemon.github.io/master/_posts/NVIDIA/triton/2023-07-17-triton系列-client-安装.md)
+使用 client 内置的 perf_analyzer 工具，安装方法[triton系列：client 安装](https://chiemon.github.io/2023/07/17/triton%E7%B3%BB%E5%88%97-client-%E5%AE%89%E8%A3%85.html)
