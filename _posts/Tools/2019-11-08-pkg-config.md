@@ -1,8 +1,8 @@
 ---
 layout: post
 title: pkg-config
-category: OS
-tags: OS
+category: Tools
+tags: pkg-config
 keywords: pkg-config
 description:
 ---
